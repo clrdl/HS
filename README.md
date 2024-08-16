@@ -127,7 +127,7 @@
 - **투석 병원 검색 서비스**
 
 <div align='center'>
-  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EB%B3%91%EC%9B%90.png' width='500px'>
+  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EB%B3%91%EC%9B%90.png' width='300px'>
 </div>
 
   - 환자가 근처 투석병원을 미리 알고 준비할 수 있는 기능
@@ -143,7 +143,7 @@
 - **의약품 검색 서비스**
 
 <div align='center'>
-  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EC%9D%98%EC%95%BD%ED%92%88.png' width='300px'>
+  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EC%9D%98%EC%95%BD%ED%92%88.png' width='650px'>
 </div>
 
   - 약물에 의해 발생하는 신장 손상의 비율이 매우 높음 (고령자 및 동반 질환 환자: 30% 이상)
