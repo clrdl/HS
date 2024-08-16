@@ -87,7 +87,7 @@
 - **신장질환 진단키트와 연동** <br />
   
 <div align='center'>
-  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%ED%82%A4%ED%8A%B8.png' width='500px'>
+  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%ED%82%A4%ED%8A%B8.png' width='300px'>
 </div>
 
   - 소변검사 동영상 가이드 제공
@@ -103,7 +103,7 @@
 - **건강검진 데이터 연동 및 분석 서비스**
 
 <div align='center'>
-  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EA%B1%B4%EA%B0%95%EA%B2%80%EC%A7%84.png' width='500px'>
+  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EA%B1%B4%EA%B0%95%EA%B2%80%EC%A7%84.png' width='300px'>
 </div>
 
   - 기저질환 파악 및 관리를 위해 국가건강검진 데이터 연동 (CODEF OpenAPI 적용)
@@ -143,7 +143,7 @@
 - **의약품 검색 서비스**
 
 <div align='center'>
-  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EC%9D%98%EC%95%BD%ED%92%88.png' width='500px'>
+  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EC%9D%98%EC%95%BD%ED%92%88.png' width='300px'>
 </div>
 
   - 약물에 의해 발생하는 신장 손상의 비율이 매우 높음 (고령자 및 동반 질환 환자: 30% 이상)
