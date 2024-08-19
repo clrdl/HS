@@ -8,10 +8,10 @@
 
 | 이름      | 담당 업무                                                           |
 | --------- | ------------------------------------------------------------------- |
-| 최한송  | **팀장 / 백엔드** : 프로젝트 관리, API 구현, Web Push, 인공지능 학습 |
-| 곽태윤    | **백엔드** : API 구현, Flask 서버 구축, 배포, 인공지능 학습         |
-| 김지수    | **프론트엔드** : UX/UI, 메인 페이지, 소개 페이지, 마이 페이지, 디자인      |
-| 오지훈    | **프론트엔드** : 스케줄러 페이지, 검색 페이지, 디자인                            |
+| 최한송  | **팀장 / 백엔드** : 서버 구축, API 구현, 데이터베이스 구현,  |
+| 곽태윤    | **백엔드** : API 구현, nodejs 서버 구축, 배포, 브랜치 마스터터, 데이터 분석&관리         |
+| 김지수    | **프론트엔드** : UX/UI, 디자인, 서비스 구성      |
+| 오지훈    | **프론트엔드** : 구글 로그인, 네이버 로그인, QR 인식, 카메라 연동,                            |
 | 황재현    | **프론트엔드** : 스케줄러 페이지, 검색 페이지, 디자인                            |
 
 <br>
@@ -265,30 +265,15 @@
 
 🔔 **Database**
 
-- Redis : **Refresh Token**을 저장하기 위해 사용
-- MySQL : Cloud 서버에서 이용하기 위해 Oracle 인스턴스를 **DB 전용 서버**로 구축
+- MongoDB : **사용자 데이터를*을 저장하기 위해 사용
+- Elastic search : 투석병원정보, 의약품 정보 검색 DB 구축
 
-🔔 **AI**
-
-- Sklearn : 요청시 학습한 결괏값을 flask 웹 서비스에 반환
-- Flask : 결괏값을 **WSGI 서버**인 gunicorn에 전달
-- gunicorn : front에 응답
 
 <div align='center'>
   <img src='https://user-images.githubusercontent.com/97580782/177033692-1fc80c04-5c8a-48d1-b76f-25eb52b5f5b4.png' width='800px'>
 </div>
 
 <br>
-
-### 2. Docker-Compose 구조
-
-🔔 **Push 서버 분리**
-
-- 서비스 간의 의존도를 낮추기 위해 기존의 Node 서버와 **Push 전송 서버**를 분리
-
-<div align='center'>
-  <img src='https://user-images.githubusercontent.com/97580782/179144069-cc3dcfe8-c2dd-44a8-9eea-beec2f4ec045.png' width='450px'>
-</div>
 
 <br>
 
@@ -310,51 +295,6 @@
 
 <br>
 
-### 🤖 인공지능 모델
-
-- 데이터셋 수집
-
-  1. 식품의약품안전처에서 제공하는 OpenAPI로 데이터셋을 수집 <br>
-     📎[공공데이터 활용](http://www.foodsafetykorea.go.kr/api/openApiInfo.do?menu_grp=MENU_GRP31&menu_no=661&show_cnt=10&start_idx=1&svc_no=C003)
-  2. 단종, 개편된 영양제 데이터셋들을 방지하기 위해 “최종수정일시” 컬럼이 **2년 이내**(2021년부터)인 데이터만 사용
-
-  3. **네이버 검색 쇼핑 API**를 사용해 영양제 구매 링크, 이미지 썸네일 컬럼 추가 <br>
-     📎[네이버 search API](https://developers.naver.com/docs/serviceapi/search/shopping/shopping.md#%EC%87%BC%ED%95%91)
-
-<br>
-
-- **데이터셋 전처리**
-
-  1. 하나의 컬럼이라도 null인 값 제거
-
-  2. 특수문자 제거 (한글, 숫자, 영어 빼고 모두 삭제)
-
-  3. **OKT**를 사용하여 “주된기능성” 컬럼의 형태소 분석 수행, 의미 없는 한국어 불용어 제거 <br>
-     📎[open-korean-text](https://github.com/open-korean-text/open-korean-text)
-
-<br>
-
-- 인공지능 모델 학습 및 테스트
-
-  1. Sklearn의 tfidfvectorizer를 사용해 전처리 한 데이터들의 가중치(tf)를 부여 <br>
-     📎[sklearn.feature_extraction.text.TfidfVectorizer](https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html)
-
-  2. 사용자에게 문장을 입력 받으면 전처리 단계의 2, 3번을 진행 후 저장된 가중치를 이용해서 “주된기능성” 컬럼과의 **유사도 산정**
-
-  3. 유사도가 **가장 높은 순**으로 3개의 영양제 index 응답
-
-  - 만약 같은 유사도를 가진 영양제들이 3개 이상이면 그 중에 랜덤하게 응답
-
-<br>
-
-- **응답 정확도 개선**
-
-  1. 인공지능 모델 학습만으로 모든 단어를 포괄할 수 없어 QA를 수행하며 부족한 부분은 **룰을 추가**
-
-```
-  🪄 여자 → 여성, 생리 → 월경, 변비 → 배변 등
-```
-
 <br>
 
 ### ⚙️ 기술 스택
@@ -362,13 +302,12 @@
 - Front-end
 
   - `React`, `TypeScript`, `axios`
-  - `Recoil`, `daisyUI`, `Styled components`
 
 - Back-end
 
   - `Node.js`, `TypeScript`
-  - `Flask`, `Python`
-  - `Redis`, `MySQL - Sequelize`
+  - `Fast API`, `Python`
+  - `MongoDB`, `Elastic Search`
 
 - AI
 
@@ -387,5 +326,3 @@
 <div align='center'>
   <img src='https://user-images.githubusercontent.com/97580782/191693588-f9157b27-17f8-43e4-a65d-a023f1ba5954.gif' width='450px'>
 </div>
-1. 첫 번째 시연 영상 1분 30초에 나오는 큐알 코드로 모바일에서 구독
-2. 스케줄에 등록한 시간에 웹, 앱 모두 푸시 알람
