@@ -277,18 +277,6 @@
 
 <br>
 
-### ☁️ ER Diagram
-
-- ERD Cloud
-
-📎[ERD 보러가기](https://www.erdcloud.com/d/xx8qkkurmF37XyweN)
-
-<div align='center'>
-  <img src='https://user-images.githubusercontent.com/97580782/179144557-7c8f4df5-e24d-4b18-b5a1-8b99229fe361.png' width='450px'>
-</div>
-
-<br>
-
 ### 📜 API Docs
 
 📎[Swagger API 보러가기](https://kdt-ai4-team17.elicecoding.com/api/swagger/)
