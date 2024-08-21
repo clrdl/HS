@@ -307,10 +307,3 @@
 
 <br>
 
-## 3. 시연 영상
-
-![시연영상](https://user-images.githubusercontent.com/97580782/191692840-d946beaf-33c9-4b24-92fb-360943c5dc8d.mp4)
-
-<div align='center'>
-  <img src='https://user-images.githubusercontent.com/97580782/191693588-f9157b27-17f8-43e4-a65d-a023f1ba5954.gif' width='450px'>
-</div>
