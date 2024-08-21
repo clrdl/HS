@@ -84,10 +84,6 @@
 
 ### 1. 메인 기능
 
-<div align='center'>
-  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%ED%82%A4%ED%8A%B8.png' width='300px'>
-</div>
-
 - **신장질환 진단키트와 연동**
 
   - 소변검사 동영상 가이드 제공
@@ -95,14 +91,14 @@
   - 검사 후, 키트 촬영 및 데이터 전송
 
   - 바이오마커 인식 결과 출력
+ 
+<div align='center'>
+  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%ED%82%A4%ED%8A%B8.png' width='300px'>
+</div>
 
 <br>
 
 ### 2. 서브 기능
-
-<div align='center'>
-  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EA%B1%B4%EA%B0%95%EA%B2%80%EC%A7%84.png' width='300px'>
-</div>
 
 - **건강검진 데이터 연동 및 분석 서비스**
 
@@ -111,6 +107,10 @@
     - 간편인증 지원으로 빠르고 간단하게 연동
       
     - **신장질환 및 합병증 관련 항목**을 중심으로 그래프 및 분석 제공 & 정상범위 파악
+   
+<div align='center'>
+  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EA%B1%B4%EA%B0%95%EA%B2%80%EC%A7%84.png' width='300px'>
+</div>
 
 <br>
 
@@ -124,10 +124,6 @@
 
 <br>
 
-<div align='center'>
-  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EB%B3%91%EC%9B%90.png' width='300px'>
-</div>
-
 - **투석 병원 검색 서비스**
 
   - 환자가 근처 투석병원을 미리 알고 준비할 수 있는 기능
@@ -137,12 +133,12 @@
     - 투석병원 등급과 거리, 병원종류에 따른 데이터 필터링
       
     - 그 외에도 다양한 병원 정보 제공
+   
+<div align='center'>
+  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EB%B3%91%EC%9B%90.png' width='300px'>
+</div>
 
 <br>
-
-<div align='center'>
-  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EC%9D%98%EC%95%BD%ED%92%88.png' width='650px'>
-</div>
 
 - **의약품 검색 서비스**
 
@@ -151,6 +147,10 @@
   - 따라서, 약물을 섭취하기 전에 신기능에 영향을 주는 성분이 있는지 검색할 수 있는 기능 제공
     
     - 식약처의 다양한 의약품 데이터를 활용해 하나의 통합 DB 구축 (4만개 의약품)
+   
+<div align='center'>
+  <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%EC%9D%98%EC%95%BD%ED%92%88.png' width='650px'>
+</div>
 
 <br>
 
