@@ -90,11 +90,11 @@
   <img src='https://raw.githubusercontent.com/beefed-up-geek/hns_readme_images/main/images/%ED%82%A4%ED%8A%B8.png' width='300px'>
 </div>
 
-  - 소변검사 동영상 가이드 제공
+    - 소변검사 동영상 가이드 제공
 
-  - 검사 후, 키트 촬영 및 데이터 전송
+    - 검사 후, 키트 촬영 및 데이터 전송
 
-  - 바이오마커 인식 결과 출력
+    - 바이오마커 인식 결과 출력
 
 <br>
 
