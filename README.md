@@ -265,8 +265,8 @@
 
 🔔 **Database**
 
-- MongoDB : **사용자 데이터를*을 저장하기 위해 사용
-- Elastic search : 투석병원정보, 의약품 정보 검색 DB 구축
+- **MongoDB** : 사용자 데이터을 저장하기 위해 사용
+- **Elastic search** : 투석병원정보, 의약품 정보 검색 DB 구축
 
 
 <div align='center'>
